@@ -1,7 +1,5 @@
 # Sentiment Analysis of Customer Product Reviews Using NLP
 
-23CS2028 Machine Learning Techniques · micro project · Joel Prasad (URK24CS7019), Prince Amos (URK24CS7024)
-
 Classifies Amazon product reviews as **positive, neutral or negative**. TF-IDF features with Multinomial
 Naive Bayes, Logistic Regression and a linear SVM are compared with a fine-tuned DistilBERT, and the best
 models are served by a Streamlit app that returns the label with a confidence score.
