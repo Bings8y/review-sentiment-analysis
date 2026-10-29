@@ -1,0 +1,23 @@
+# Environment / caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Documents (report, paper, slides, certificates) are not part of the code repo
+*.docx
+*.pdf
+*.pptx
+report/
+journal/
+slides/
+templates/
+certificates/
+run_all.sh
+
+# Large / regenerable files
+data/raw_sample.jsonl
+data/reviews_clean.csv
+models/distilbert-sentiment/
+results/distilbert_train.log

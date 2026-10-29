@@ -1,0 +1,483 @@
+{
+ "n_features": 60073,
+ "vectorizer_fit_seconds": 0.44,
+ "split_sizes": {
+  "train": 24000,
+  "val": 3000,
+  "test": 3000
+ },
+ "models": {
+  "Multinomial NB": {
+   "accuracy": 0.844,
+   "macro_precision": 0.6762,
+   "macro_recall": 0.5843,
+   "macro_f1": 0.5929,
+   "weighted_f1": 0.8137,
+   "per_class": {
+    "negative": {
+     "precision": 0.8021,
+     "recall": 0.7097,
+     "f1": 0.7531,
+     "support": 651
+    },
+    "neutral": {
+     "precision": 0.3636,
+     "recall": 0.0632,
+     "f1": 0.1077,
+     "support": 253
+    },
+    "positive": {
+     "precision": 0.863,
+     "recall": 0.98,
+     "f1": 0.9178,
+     "support": 2096
+    }
+   },
+   "confusion": [
+    [
+     462,
+     18,
+     171
+    ],
+    [
+     82,
+     16,
+     155
+    ],
+    [
+     32,
+     10,
+     2054
+    ]
+   ],
+   "params": {
+    "alpha": 0.05
+   },
+   "val_macro_f1": 0.6399,
+   "train_seconds": 0.02,
+   "infer_ms_per_review": 0.0001
+  },
+  "Logistic Regression": {
+   "accuracy": 0.8693,
+   "macro_precision": 0.7257,
+   "macro_recall": 0.6524,
+   "macro_f1": 0.6672,
+   "weighted_f1": 0.8511,
+   "per_class": {
+    "negative": {
+     "precision": 0.8248,
+     "recall": 0.8172,
+     "f1": 0.821,
+     "support": 651
+    },
+    "neutral": {
+     "precision": 0.4526,
+     "recall": 0.17,
+     "f1": 0.2471,
+     "support": 253
+    },
+    "positive": {
+     "precision": 0.8996,
+     "recall": 0.9699,
+     "f1": 0.9334,
+     "support": 2096
+    }
+   },
+   "confusion": [
+    [
+     532,
+     25,
+     94
+    ],
+    [
+     77,
+     43,
+     133
+    ],
+    [
+     36,
+     27,
+     2033
+    ]
+   ],
+   "params": {
+    "C": 4.0
+   },
+   "val_macro_f1": 0.6612,
+   "train_seconds": 0.62,
+   "infer_ms_per_review": 0.0002
+  },
+  "Linear SVM": {
+   "accuracy": 0.8683,
+   "macro_precision": 0.7159,
+   "macro_recall": 0.6498,
+   "macro_f1": 0.6615,
+   "weighted_f1": 0.8497,
+   "per_class": {
+    "negative": {
+     "precision": 0.8158,
+     "recall": 0.8233,
+     "f1": 0.8196,
+     "support": 651
+    },
+    "neutral": {
+     "precision": 0.4301,
+     "recall": 0.1581,
+     "f1": 0.2312,
+     "support": 253
+    },
+    "positive": {
+     "precision": 0.9018,
+     "recall": 0.968,
+     "f1": 0.9337,
+     "support": 2096
+    }
+   },
+   "confusion": [
+    [
+     536,
+     27,
+     88
+    ],
+    [
+     80,
+     40,
+     133
+    ],
+    [
+     41,
+     26,
+     2029
+    ]
+   ],
+   "params": {
+    "C": 1.0
+   },
+   "val_macro_f1": 0.6488,
+   "train_seconds": 0.12,
+   "infer_ms_per_review": 0.0001
+  },
+  "Logistic Regression (balanced)": {
+   "accuracy": 0.8393,
+   "macro_precision": 0.6886,
+   "macro_recall": 0.7277,
+   "macro_f1": 0.7025,
+   "weighted_f1": 0.8509,
+   "per_class": {
+    "negative": {
+     "precision": 0.7875,
+     "recall": 0.8141,
+     "f1": 0.8006,
+     "support": 651
+    },
+    "neutral": {
+     "precision": 0.321,
+     "recall": 0.4783,
+     "f1": 0.3841,
+     "support": 253
+    },
+    "positive": {
+     "precision": 0.9574,
+     "recall": 0.8907,
+     "f1": 0.9229,
+     "support": 2096
+    }
+   },
+   "confusion": [
+    [
+     530,
+     91,
+     30
+    ],
+    [
+     79,
+     121,
+     53
+    ],
+    [
+     64,
+     165,
+     1867
+    ]
+   ],
+   "params": {
+    "C": 1.0
+   },
+   "val_macro_f1": 0.714,
+   "train_seconds": 0.52,
+   "infer_ms_per_review": 0.0002
+  },
+  "Linear SVM (balanced)": {
+   "accuracy": 0.8603,
+   "macro_precision": 0.6944,
+   "macro_recall": 0.6758,
+   "macro_f1": 0.6827,
+   "weighted_f1": 0.8536,
+   "per_class": {
+    "negative": {
+     "precision": 0.8106,
+     "recall": 0.8218,
+     "f1": 0.8162,
+     "support": 651
+    },
+    "neutral": {
+     "precision": 0.3529,
+     "recall": 0.2609,
+     "f1": 0.3,
+     "support": 253
+    },
+    "positive": {
+     "precision": 0.9196,
+     "recall": 0.9447,
+     "f1": 0.932,
+     "support": 2096
+    }
+   },
+   "confusion": [
+    [
+     535,
+     51,
+     65
+    ],
+    [
+     79,
+     66,
+     108
+    ],
+    [
+     46,
+     70,
+     1980
+    ]
+   ],
+   "params": {
+    "C": 0.1
+   },
+   "val_macro_f1": 0.7158,
+   "train_seconds": 0.08,
+   "infer_ms_per_review": 0.0001
+  }
+ },
+ "ablation": {
+  "Standard stopwords, unigrams": {
+   "accuracy": 0.8337,
+   "macro_f1": 0.6215,
+   "negation_subset_acc": 0.7504,
+   "negation_subset_f1": 0.5898,
+   "n_negation": 1246,
+   "n_features": 7722
+  },
+  "Standard stopwords, uni+bigrams": {
+   "accuracy": 0.8403,
+   "macro_f1": 0.6144,
+   "negation_subset_acc": 0.756,
+   "negation_subset_f1": 0.5937,
+   "n_negation": 1246,
+   "n_features": 60274
+  },
+  "Negation-aware, unigrams": {
+   "accuracy": 0.852,
+   "macro_f1": 0.6508,
+   "negation_subset_acc": 0.7745,
+   "negation_subset_f1": 0.6347,
+   "n_negation": 1246,
+   "n_features": 7727
+  },
+  "Negation-aware, uni+bigrams": {
+   "accuracy": 0.8693,
+   "macro_f1": 0.6672,
+   "negation_subset_acc": 0.813,
+   "negation_subset_f1": 0.6668,
+   "n_negation": 1246,
+   "n_features": 60073
+  }
+ },
+ "top_features": {
+  "negative": [
+   [
+    "not",
+    9.054
+   ],
+   [
+    "not work",
+    5.275
+   ],
+   [
+    "not worth",
+    4.973
+   ],
+   [
+    "disappoint",
+    4.95
+   ],
+   [
+    "return",
+    4.608
+   ],
+   [
+    "not good",
+    4.583
+   ],
+   [
+    "awful",
+    4.487
+   ],
+   [
+    "worst",
+    4.352
+   ],
+   [
+    "waste",
+    4.343
+   ],
+   [
+    "not recommend",
+    4.175
+   ],
+   [
+    "terrible",
+    4.092
+   ],
+   [
+    "trash",
+    3.907
+   ],
+   [
+    "horrible",
+    3.782
+   ],
+   [
+    "break",
+    3.73
+   ],
+   [
+    "nothing",
+    3.6
+   ]
+  ],
+  "neutral": [
+   [
+    "but",
+    5.207
+   ],
+   [
+    "okay",
+    4.868
+   ],
+   [
+    "however",
+    3.398
+   ],
+   [
+    "ok",
+    3.288
+   ],
+   [
+    "not exactly",
+    2.807
+   ],
+   [
+    "variety",
+    2.615
+   ],
+   [
+    "ehh",
+    2.415
+   ],
+   [
+    "awesone",
+    2.393
+   ],
+   [
+    "three star",
+    2.328
+   ],
+   [
+    "not really",
+    2.307
+   ],
+   [
+    "give three",
+    2.278
+   ],
+   [
+    "though",
+    2.198
+   ],
+   [
+    "half",
+    2.185
+   ],
+   [
+    "too",
+    2.176
+   ],
+   [
+    "meh",
+    2.168
+   ]
+  ],
+  "positive": [
+   [
+    "love",
+    11.841
+   ],
+   [
+    "great",
+    9.037
+   ],
+   [
+    "perfect",
+    6.977
+   ],
+   [
+    "not too",
+    5.438
+   ],
+   [
+    "excellent",
+    5.25
+   ],
+   [
+    "amaze",
+    5.149
+   ],
+   [
+    "best",
+    5.115
+   ],
+   [
+    "good",
+    5.114
+   ],
+   [
+    "easy",
+    4.722
+   ],
+   [
+    "awesome",
+    4.72
+   ],
+   [
+    "happy",
+    4.162
+   ],
+   [
+    "nice",
+    4.056
+   ],
+   [
+    "wonderful",
+    3.937
+   ],
+   [
+    "really like",
+    3.857
+   ],
+   [
+    "fantastic",
+    3.61
+   ]
+  ]
+ }
+}

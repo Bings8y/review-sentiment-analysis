@@ -1,0 +1,147 @@
+{
+ "n_test": 3000,
+ "n_negation": 1246,
+ "n_praise_negative": 61,
+ "models": {
+  "Multinomial NB": {
+   "all": 0.5929,
+   "negation": 0.5813,
+   "negation_acc": 0.7737,
+   "no_negation_acc": 0.894,
+   "praise_negative_acc": 0.5246,
+   "negative_acc": 0.7097,
+   "neutral_recall": 0.0632
+  },
+  "Logistic Regression": {
+   "all": 0.6672,
+   "negation": 0.6668,
+   "negation_acc": 0.813,
+   "no_negation_acc": 0.9094,
+   "praise_negative_acc": 0.5738,
+   "negative_acc": 0.8172,
+   "neutral_recall": 0.17
+  },
+  "Linear SVM": {
+   "all": 0.6615,
+   "negation": 0.65,
+   "negation_acc": 0.8098,
+   "no_negation_acc": 0.9099,
+   "praise_negative_acc": 0.6066,
+   "negative_acc": 0.8233,
+   "neutral_recall": 0.1581
+  },
+  "Logistic Regression (balanced)": {
+   "all": 0.7025,
+   "negation": 0.6804,
+   "negation_acc": 0.7592,
+   "no_negation_acc": 0.8962,
+   "praise_negative_acc": 0.5574,
+   "negative_acc": 0.8141,
+   "neutral_recall": 0.4783
+  },
+  "Linear SVM (balanced)": {
+   "all": 0.6827,
+   "negation": 0.6808,
+   "negation_acc": 0.7986,
+   "no_negation_acc": 0.9042,
+   "praise_negative_acc": 0.5574,
+   "negative_acc": 0.8218,
+   "neutral_recall": 0.2609
+  },
+  "DistilBERT": {
+   "all": 0.7197,
+   "negation": 0.7097,
+   "negation_acc": 0.8299,
+   "no_negation_acc": 0.9173,
+   "praise_negative_acc": 0.623,
+   "negative_acc": 0.8464,
+   "neutral_recall": 0.336
+  }
+ },
+ "examples": [
+  {
+   "kind": "negation",
+   "review": "Quality is not as good. One set only last me about a month",
+   "label": "neutral",
+   "lr": "negative",
+   "bert": "negative"
+  },
+  {
+   "kind": "negation",
+   "review": "Looks nice but doesn't brush thru my hair which is thick",
+   "label": "negative",
+   "lr": "neutral",
+   "bert": "neutral"
+  },
+  {
+   "kind": "negation",
+   "review": "I enjoy the scent and cooling sensation, but I do not think it lasts long enough",
+   "label": "positive",
+   "lr": "neutral",
+   "bert": "neutral"
+  },
+  {
+   "kind": "negation",
+   "review": "does what it says. have not seen where to .... does what it says.  have not seen where to get refills yet, though",
+   "label": "positive",
+   "lr": "negative",
+   "bert": "positive"
+  },
+  {
+   "kind": "praise-in-negative",
+   "review": "Cheap+ Quality isn't great. They're cheap and cute but the quality is bad. The brush heads detach all the time and I have to put them back in place",
+   "label": "negative",
+   "lr": "neutral",
+   "bert": "negative"
+  },
+  {
+   "kind": "praise-in-negative",
+   "review": "To heavy to use. To heavy to be comfortable. The material is thick . Which would be great for something else.  But in this case NO",
+   "label": "negative",
+   "lr": "neutral",
+   "bert": "neutral"
+  },
+  {
+   "kind": "praise-in-negative",
+   "review": "They are the size of golf balls and do not smell great.. Much smaller than expected . They are the size of golf balls and do not smell great",
+   "label": "negative",
+   "lr": "neutral",
+   "bert": "negative"
+  },
+  {
+   "kind": "praise-in-negative",
+   "review": "Not tangle free. Color was perfect but hair tangled badly",
+   "label": "negative",
+   "lr": "neutral",
+   "bert": "neutral"
+  },
+  {
+   "kind": "neutral",
+   "review": "Quality is not as good. One set only last me about a month",
+   "label": "neutral",
+   "lr": "negative",
+   "bert": "negative"
+  },
+  {
+   "kind": "neutral",
+   "review": "Quality so so... Came in with a dent in the front... and quality was a 7 put of 10",
+   "label": "neutral",
+   "lr": "positive",
+   "bert": "neutral"
+  },
+  {
+   "kind": "neutral",
+   "review": "Powerful..careful!. I loved it until it died.I had it for a year",
+   "label": "neutral",
+   "lr": "positive",
+   "bert": "positive"
+  },
+  {
+   "kind": "neutral",
+   "review": "Moose tattoo. Too many only needed a couple",
+   "label": "neutral",
+   "lr": "positive",
+   "bert": "negative"
+  }
+ ]
+}
